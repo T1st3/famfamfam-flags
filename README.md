@@ -25,7 +25,7 @@ The aim of this project is to make this icon pack available through various pack
 - [NuGet](https://www.nuget.org)
 
 
-All icons are supplied in both PNG and GIF formats.
+All icons are supplied in both `PNG` and `GIF` formats.
 
 
 ## Extensions and updates
@@ -43,7 +43,7 @@ The project now supports aliases in CSS spritesheets (see below). The feature wa
 
 ## CSS spritesheets
 
-You can insert the icons directly into your HTML with a common IMG tag:
+You can insert the icons directly into your HTML with a common `IMG` tag:
 
 ```html
 <img alt="French Flag" src="dist/png/fr.png" width="16" height="11">
@@ -69,22 +69,22 @@ Just remember to add the CSS stylesheet to the HEAD of your HTML page!
 
 ### NPM
 
-> npm install famfamfam-flags
+> `npm install famfamfam-flags`
 
 
 ### Bower
 
-> bower install famfamfam-flags
+> `bower install famfamfam-flags`
 
 
 ### Composer / Packagist
 
-> composer require legacy-icons/famfamfam-flags
+> `composer require legacy-icons/famfamfam-flags`
 
 
 ### NuGet
 
-> Install-Package famfamfam-flags
+> `Install-Package famfamfam-flags`
 
 
 
@@ -92,28 +92,28 @@ Just remember to add the CSS stylesheet to the HEAD of your HTML page!
 
 We use [Gulp](http://gulpjs.com/) to build the project, so if you want to re-build or customize this project, you'll need Gulp.
 
-After gulp is installed, and your CLI is pointed to your work directory, first install the dependencies:
+After `gulp` is installed, and your CLI is pointed to your work directory, first install the dependencies:
 
 **with NPM 2.x.x**
 
-> npm install
+> `npm install`
 
 **with NPM 3.x.x** (resolve dependencies for `node-spritesheet` before this module's ones)
 
-> npm install grunt grunt-contrib-coffee grunt-contrib-clean
+> `npm install grunt grunt-contrib-coffee grunt-contrib-clean`
 
-> npm install
+> `npm install`
 
 then be sure that you have *[ImageMagick](http://www.imagemagick.org/script/binary-releases.php)* installed for building spritesheet.
 
 then, you can run the `gulp build` task to build the project:
 
-> gulp build
+> `gulp build`
 
 
 ### What the build task does?
 
-First, it takes PNG and GIF files from the `src` folder, and tidies them to the `dist` folder.
+First, it takes `PNG` and `GIF` files from the `src` folder, and tidies them to the `dist` folder.
 
 Then it creates a spritesheet from the PNG images located in the `src` folder, and thus creates the `sprite` folder in `dist`.
 
